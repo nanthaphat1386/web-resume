@@ -13,8 +13,9 @@ export const sharedProfile = {
   location: "Nonthaburi, Thailand",
   email: "nanthaphat1386@gmail.com",
   phone: "092-783-1218",
-  // TODO: replace with your real profile URLs — not provided in the source resume.
+  // TODO: replace with your real LinkedIn URL — not provided in the source resume.
   github: "https://github.com/nanthaphat1386",
+  linkedin: "https://linkedin.com/in/your-profile",
   resumeUrl: "/resume.pdf",
 };
 
