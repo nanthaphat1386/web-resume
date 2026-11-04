@@ -73,7 +73,7 @@ export default function Navbar() {
           href="#home"
           className="text-base font-semibold tracking-tight text-navy-900 hover:text-accent-600 transition-colors"
         >
-          {sharedProfile.name}
+          {t.meta.name}
           <span className="sr-only"> — Home</span>
         </a>
 
