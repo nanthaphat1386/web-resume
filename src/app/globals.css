@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary - Dark Navy / Charcoal */
+  --color-navy-950: #0a0f1c;
+  --color-navy-900: #0f172a;
+  --color-navy-800: #16213a;
+  --color-navy-700: #1e293b;
+  --color-navy-600: #334155;
+
+  /* Secondary - White / Light Gray */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+
+  /* Accent - Professional Blue / Teal */
+  --color-accent-500: #0d9488;
+  --color-accent-600: #0f766e;
+  --color-accent-blue-500: #2563eb;
+  --color-accent-blue-600: #1d4ed8;
+
+  --background: #ffffff;
+  --foreground: var(--color-navy-900);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-600: var(--color-navy-600);
+  --color-slate-50: var(--color-slate-50);
+  --color-slate-100: var(--color-slate-100);
+  --color-slate-200: var(--color-slate-200);
+  --color-slate-400: var(--color-slate-400);
+  --color-slate-500: var(--color-slate-500);
+  --color-slate-600: var(--color-slate-600);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-blue-500: var(--color-accent-blue-500);
+  --color-accent-blue-600: var(--color-accent-blue-600);
+  --font-sans: var(--font-inter), var(--font-noto-thai), sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Reusable section container */
+.section-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* Subtle fade-in / slide-up reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Focus visibility for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-accent-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Scrollbar polish (progressive, non-essential) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-slate-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-200);
+  border-radius: 8px;
+}
