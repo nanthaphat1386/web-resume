@@ -14,8 +14,7 @@ export const sharedProfile = {
   email: "nanthaphat1386@gmail.com",
   phone: "092-783-1218",
   // TODO: replace with your real profile URLs — not provided in the source resume.
-  github: "https://github.com/your-username",
-  linkedin: "https://linkedin.com/in/your-profile",
+  github: "https://github.com/nanthaphat1386",
   resumeUrl: "/resume.pdf",
 };
 
@@ -312,7 +311,7 @@ const en: SiteContent = {
       // Add certifications here, e.g. "Google Associate Android Developer"
     ],
     languages: [
-      { label: "English", level: "Fluent" },
+      { label: "English", level: "Good" },
       { label: "Thai", level: "Native" },
     ],
   },
@@ -337,7 +336,7 @@ const en: SiteContent = {
       { type: "email", label: "Email", value: sharedProfile.email },
       { type: "phone", label: "Phone", value: sharedProfile.phone },
       { type: "github", label: "GitHub", value: sharedProfile.github.replace("https://", "") },
-      { type: "linkedin", label: "LinkedIn", value: sharedProfile.linkedin.replace("https://", "") },
+      // { type: "linkedin", label: "LinkedIn", value: sharedProfile.linkedin.replace("https://", "") },
       { type: "location", label: "Location", value: sharedProfile.location },
     ],
     form: {
@@ -519,8 +518,8 @@ const th: SiteContent = {
       // เพิ่มใบรับรองที่นี่ เช่น "Google Associate Android Developer"
     ],
     languages: [
-      { label: "ภาษาอังกฤษ", level: "คล่องแคล่ว" },
-      { label: "ภาษาไทย", level: "ภาษาแม่" },
+      { label: "ภาษาอังกฤษ", level: "ดี" },
+      { label: "ภาษาไทย", level: "ภาษาหลัก" },
     ],
   },
   achievements: {
@@ -544,7 +543,7 @@ const th: SiteContent = {
       { type: "email", label: "อีเมล", value: sharedProfile.email },
       { type: "phone", label: "โทรศัพท์", value: sharedProfile.phone },
       { type: "github", label: "GitHub", value: sharedProfile.github.replace("https://", "") },
-      { type: "linkedin", label: "LinkedIn", value: sharedProfile.linkedin.replace("https://", "") },
+      // { type: "linkedin", label: "LinkedIn", value: sharedProfile.linkedin.replace("https://", "") },
       { type: "location", label: "ที่อยู่", value: sharedProfile.location },
     ],
     form: {
